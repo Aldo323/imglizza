@@ -1,16 +1,15 @@
+# Reemplazar .gitignore con versión corregida
+@"
 # Imágenes originales (muy pesadas)
 originales/
-*.png
-*.jpg
-*.jpeg
-
-# Solo trackear optimizadas
-!optimizadas/
-optimizadas/**/*.webp
-optimizadas/**/*.jpg
+Anillos/*.png
 
 # Logs y temporales
 *.log
 __pycache__/
 .DS_Store
 Thumbs.db
+
+# Permitir imágenes optimizadas
+# (no bloquear *.webp ni *.jpg globalmente)
+"@ | Out-File -FilePath ".gitignore" -Encoding UTF8 -Force
