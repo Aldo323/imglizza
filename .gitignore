@@ -1,0 +1,16 @@
+# Imágenes originales (muy pesadas)
+originales/
+*.png
+*.jpg
+*.jpeg
+
+# Solo trackear optimizadas
+!optimizadas/
+optimizadas/**/*.webp
+optimizadas/**/*.jpg
+
+# Logs y temporales
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
